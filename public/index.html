@@ -26,14 +26,17 @@
     -->
     <title>Decent Burger</title>
     <script>
-      window.addEventListener("scroll", function () {
-          let navbar = document.querySelector("header .navbar"); // Select navbar
-          if (window.scrollY > 50) { // If scrolled more than 50px
-              navbar.classList.add("sticky"); // Add sticky class
-          } else {
-              navbar.classList.remove("sticky"); // Remove sticky class
-          }
-      });
+window.addEventListener("scroll", function () {
+    let navbar = document.querySelector("header .navbar"); // Select navbar
+    if (navbar) { // Ensure navbar exists
+        if (window.scrollY > 50) { 
+            navbar.classList.add("sticky");
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+});
+
   </script>
   </head>
   <body>

@@ -26,10 +26,10 @@ function Header() {
             <Nav.Link as={Link} to="/shop">Shopping</Nav.Link>          
             <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
             <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-            <Nav.Link as={Link} to="/cart">
+            <Nav.Link as={Link} to="/Addtocart">
               <div className='card'>
               <i className="bi bi-bag fs-5"></i>
-              <em className='roundpoint'>2</em>
+              <em className='roundpoint'></em>
               </div>
             </Nav.Link>
 

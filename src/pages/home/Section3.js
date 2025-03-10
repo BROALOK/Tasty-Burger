@@ -115,13 +115,14 @@ const renderRatingIcons = (rating) => {
       </Row>
       <Row>{mockData.map((CardData, index)=>(
         <Cards
-          key={index}
-          image={CardData.image}
-          rating={CardData.rating}
-          title={CardData.title}
-          paragraph={CardData.paragraph}
-          price={CardData.price}
-          renderRatingIcons={renderRatingIcons}
+   key={CardData.id}  // Use unique id as key
+    id={CardData.id}    // Pass id to Cards component
+    image={CardData.image}
+    rating={CardData.rating}
+    title={CardData.title}
+    paragraph={CardData.paragraph}
+    price={CardData.price}
+    renderRatingIcons={renderRatingIcons}
         />
 
         ))}

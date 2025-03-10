@@ -108,3 +108,23 @@ a{
   background-color: transparent;
   border-color: var(--light-red);
 }
+.add_to_Cart_mng{
+  margin-top: 5%;
+}
+.add_to_Cart_text_mng{
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--light-black);
+text-align: center;
+  margin-left: 50%;}
+@media (max-width: 767px){
+  .add_to_Cart_mng{
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-left: 35%;
+
+  }
+  .add_to_Cart_text_mng{
+  margin-left: 0%;
+    }
+}
